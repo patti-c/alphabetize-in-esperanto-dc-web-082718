@@ -1,0 +1,29 @@
+
+[1mFrom:[0m /home/patti-c/alphabetize-in-esperanto-dc-web-082718/lib/alphabetize.rb @ line 21 Object#alphabetize:
+
+     [1;34m3[0m: [32mdef[0m [1;34malphabetize[0m(arr)
+     [1;34m4[0m:   esperanto_alphabet = [31m[1;31m"[0m[31mabcĉdefgĝhĥijĵklmnoprsŝtuŭvz[1;31m"[0m[31m[0m
+     [1;34m5[0m: 
+     [1;34m6[0m:   [1;34m# Each sentence needs to be converted to an array [0m
+     [1;34m7[0m:   [1;34m# of numbers based on the indexes in the esperanto [0m
+     [1;34m8[0m:   [1;34m# alphabet. First, let's iterate through the array of[0m
+     [1;34m9[0m:   [1;34m# sentence, then each individual sentence.[0m
+    [1;34m10[0m:   
+    [1;34m11[0m:   numeric_sentence = []
+    [1;34m12[0m:   numeric_sentence_list = {}
+    [1;34m13[0m:   
+    [1;34m14[0m:   arr.each [32mdo[0m |sentence|
+    [1;34m15[0m:     sentence.split([35m[1;35m/[0m[35m[1;35m/[0m[35m[0m).each [32mdo[0m |letter|
+    [1;34m16[0m:       numeric_sentence << esperanto_alphabet.index([31m[1;31m"[0m[31m#{letter}[0m[31m[1;31m"[0m[31m[0m)
+    [1;34m17[0m:     [32mend[0m
+    [1;34m18[0m:     
+    [1;34m19[0m:     numeric_sentence_list[sentence] = numeric_sentence
+    [1;34m20[0m:     
+ => [1;34m21[0m:     binding.pry
+    [1;34m22[0m:     
+    [1;34m23[0m:   [32mend[0m
+    [1;34m24[0m:   
+    [1;34m25[0m:   [32mreturn[0m arr
+    [1;34m26[0m: 
+    [1;34m27[0m: [32mend[0m
+
