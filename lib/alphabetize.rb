@@ -8,6 +8,8 @@ def alphabetize(arr)
   # alphabet. First, let's iterate through the array of
   # sentence, then each individual sentence.
   
+  
+  =begin
   numeric_sentence = []
   sentence_hash = {}
   
@@ -27,9 +29,11 @@ def alphabetize(arr)
   end
   
   sentence_hash = sentence_hash.sort_by{|sentence, numbers| numbers}.to_h
-  
+  =end
   
   arr.sort_by{ |sentence|
+    sentence.split
+  }
     
   end 
   
