@@ -35,6 +35,7 @@ def alphabetize(arr)
   arr.sort_by { |sentence|
     sentence.split('').collect do |character|
       esperanto_alphabet.index(character)
+    end
   }
   
   
