@@ -3,13 +3,11 @@ require 'pry'
 def alphabetize(arr)
   esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   
-  # Each sentence needs to be converted to an array 
-  # of numbers based on the indexes in the esperanto 
-  # alphabet. First, let's iterate through the array of
-  # sentence, then each individual sentence.
-  
-  
 =begin
+  
+  # This was all extremely redundant and didn't work but 
+  # I am leaving it here as a monument to a Good Try
+
   numeric_sentence = []
   sentence_hash = {}
   
@@ -29,10 +27,14 @@ def alphabetize(arr)
   end
   
   sentence_hash = sentence_hash.sort_by{|sentence, numbers| numbers}.to_h
+  
+  return sentence_hash.keys
+  
 =end
   
-  arr.sort_by{ |sentence|
-    sentence.split
+  arr.sort_by { |sentence|
+    sentence.split('').collect do |character|
+      esperanto_alphabet.index(character)
   }
     
   end 
