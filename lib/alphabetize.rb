@@ -32,13 +32,10 @@ def alphabetize(arr)
   
 =end
   
-  arr.sort_by { |sentence|
+  return arr.sort_by { |sentence|
     sentence.split('').collect do |character|
       esperanto_alphabet.index(character)
     end
   }
-  
-  
-  return arr
 
 end
