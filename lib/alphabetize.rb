@@ -36,9 +36,8 @@ def alphabetize(arr)
     sentence.split('').collect do |character|
       esperanto_alphabet.index(character)
   }
-    
-  end 
   
-  return sentence_hash.keys
+  
+  return arr
 
 end
