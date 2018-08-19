@@ -9,7 +9,7 @@ def alphabetize(arr)
   # sentence, then each individual sentence.
   
   
-  =begin
+=begin
   numeric_sentence = []
   sentence_hash = {}
   
@@ -29,7 +29,7 @@ def alphabetize(arr)
   end
   
   sentence_hash = sentence_hash.sort_by{|sentence, numbers| numbers}.to_h
-  =end
+=end
   
   arr.sort_by{ |sentence|
     sentence.split
