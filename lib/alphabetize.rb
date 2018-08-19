@@ -29,7 +29,7 @@ def alphabetize(arr)
   sentence_hash = sentence_hash.sort_by{|sentence, numbers| numbers}.to_h
   
   
-  arr.sort_by |sentence|
+  arr.sort_by{ |sentence|
     
   end 
   
